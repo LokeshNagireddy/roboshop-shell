@@ -7,7 +7,7 @@ unzip /tmp/dispatch.zip
 go mod init dispatch
 go get
 go build
-#copy service
+cp dispatch.service /etc/systemd/system/dispatch.service
 systemctl daemon-reload
 systemctl enable dispatch
 systemctl start dispatch

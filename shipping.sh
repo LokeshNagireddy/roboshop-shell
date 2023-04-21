@@ -6,7 +6,7 @@ cd /app
 unzip /tmp/shipping.zip
 mvn clean package
 mv target/shipping-1.0.jar shipping.jar
-#copy shipping service
+cp shipping.service /etc/systemd/system/shipping.service
 systemctl daemon-reload
 systemctl enable shipping
 systemctl start shipping
