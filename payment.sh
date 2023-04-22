@@ -13,7 +13,7 @@ echo -e "\e[35m>>>>>>>>> Install Dependencies  <<<<<<<<\e[0m"
 pip3.6 install -r requirements.txt
 
 echo -e "\e[35m>>>>>>>>> Copy payment service  <<<<<<<<\e[0m"
-cp payment.service /etc/systemd/system/payment.service
+cp /root/roboshop-shell/payment.service /etc/systemd/system/payment.service
 systemctl daemon-reload
 echo -e "\e[35m>>>>>>>>> Enable and Start Payment Service  <<<<<<<<\e[0m"
 systemctl enable payment

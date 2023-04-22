@@ -1,7 +1,7 @@
 echo -e "\e[35m>>>>>>>>> Disable Existing mysql version  <<<<<<<<\e[0m"
 dnf module disable mysql -y
 echo -e "\e[35m>>>>>>>>> Create mysql repo file  <<<<<<<<\e[0m"
-cp mysql.repo /etc/yum.repos.d/mysql.repo
+cp /root/roboshop-shell/mysql.repo /etc/yum.repos.d/mysql.repo
 echo -e "\e[35m>>>>>>>>> install mysql  <<<<<<<<\e[0m"
 yum install mysql-community-server -y
 echo -e "\e[35m>>>>>>>>> Enable & Start mysql service  <<<<<<<<\e[0m"
