@@ -1,3 +1,4 @@
+echo -e "\e[35m>>>>>>>>> Install Golang <<<<<<<<\e[0m"
 yum install golang -y
 useradd roboshop
 mkdir /app
