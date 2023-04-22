@@ -12,5 +12,5 @@ cd /usr/share/nginx/html
 unzip /tmp/frontend.zip
 
 echo -e "\e[35m>>>>>>>>> Create the service <<<<<<<<\e[0m"
-cp roboshop.conf /etc/nginx/default.d/roboshop.conf
+cp /root/roboshop-shell/roboshop.conf /etc/nginx/default.d/roboshop.conf
 systemctl restart nginx
