@@ -1,5 +1,5 @@
 echo -e "\e[35m>>>>>>>>> Create Mongodb repo file <<<<<<<<\e[0m"
-cp /root/roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo
+cp /home/centos/roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo
 echo -e "\e[35m>>>>>>>>> Install Mongodb  <<<<<<<<\e[0m"
 yum install mongodb-org -y
 
