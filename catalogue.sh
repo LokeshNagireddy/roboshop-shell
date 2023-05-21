@@ -16,7 +16,7 @@ echo -e "\e[35m>>>>>>>>> Update Dependencies <<<<<<<<\e[0m"
 npm install
 
 echo -e "\e[35m>>>>>>>>> Create and start Catalogue service <<<<<<<<\e[0m"
-cp /root/roboshop-shell/catalogue.service /etc/systemd/system/catalogue.service
+cp /home/centos/roboshop-shell/catalogue.service /etc/systemd/system/catalogue.service
 systemctl enable catalogue
 systemctl start catalogue
 

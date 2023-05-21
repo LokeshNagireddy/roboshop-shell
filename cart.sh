@@ -11,7 +11,7 @@ unzip /tmp/cart.zip
 echo -e "\e[35m>>>>>>>>> Install Dependencies  <<<<<<<<\e[0m"
 npm install
 echo -e "\e[35m>>>>>>>>> Copy Cart Service  <<<<<<<<\e[0m"
-cp /root/roboshop-shell/cart.service /etc/systemd/system/cart.service
+cp /home/centos/roboshop-shell/cart.service /etc/systemd/system/cart.service
 systemctl daemon-reload
 echo -e "\e[35m>>>>>>>>> Enable and Start Cart Service  <<<<<<<<\e[0m"
 systemctl enable cart
